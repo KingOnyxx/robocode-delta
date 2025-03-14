@@ -1,16 +1,34 @@
 <?xml version="1.0" encoding="ASCII"?>
 <feature:DEFeatureModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:feature="http://deltaecore.org/feature/1.0">
   <rootFeature minCardinality="1" maxCardinality="1" name="Module">
-    <groups minCardinality="2" maxCardinality="2">
+    <groups minCardinality="5" maxCardinality="5">
       <features minCardinality="1" maxCardinality="1" name="Radar">
         <groups minCardinality="1" maxCardinality="1">
           <features maxCardinality="1" name="SpinningRadar"/>
-          <features maxCardinality="1" name="MouseRadar"/>
+          <features maxCardinality="1" name="LockRadar"/>
+        </groups>
+      </features>
+      <features minCardinality="1" maxCardinality="1" name="Targeting">
+        <groups maxCardinality="1">
+          <features maxCardinality="1" name="HeadOnTargeting"/>
         </groups>
       </features>
       <features minCardinality="1" maxCardinality="1" name="Movement">
-        <groups maxCardinality="1">
+        <groups minCardinality="1" maxCardinality="1">
           <features maxCardinality="1" name="NoMovement"/>
+          <features maxCardinality="1" name="LineMovement"/>
+          <features maxCardinality="1" name="Cornering"/>
+        </groups>
+      </features>
+      <features minCardinality="1" maxCardinality="1" name="SelectEnemy">
+        <groups minCardinality="1" maxCardinality="1">
+          <features maxCardinality="1" name="ClosestEnemy"/>
+          <features maxCardinality="1" name="StrongestEnemy"/>
+        </groups>
+      </features>
+      <features minCardinality="1" maxCardinality="1" name="Gun">
+        <groups maxCardinality="1">
+          <features maxCardinality="1" name="MaximumPower"/>
         </groups>
       </features>
     </groups>

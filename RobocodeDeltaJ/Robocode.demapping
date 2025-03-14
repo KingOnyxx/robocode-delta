@@ -1,5 +1,26 @@
+ClosestEnemy:
+<decore/ClosestEnemy.decore>
+
+Cornering:
+<decore/Cornering.decore>
+
+HeadOnTargeting:
+<decore/HeadOnTargeting.decore>
+
+LineMovement:
+<decore/LineMovement.decore>
+
+LockRadar:
+<decore/LockRadar.decore>
+
+MaximumPower:
+<decore/Maximum.decore>
+
 NoMovement:
 <decore/Quiet.decore>
 
 SpinningRadar:
 <decore/SpinningRadar.decore>
+
+StrongestEnemy:
+<decore/StrongestEnemy.decore>

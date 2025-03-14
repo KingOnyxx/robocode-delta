@@ -1,0 +1,19 @@
+delta LockRadar {
+
+	modifies jab.module.Radar {
+		adds import robocode.Event;
+		adds import robocode.ScannedRobotEvent;
+			
+		modifies scan() {
+			bot.setTurnRadarRightRadians(Double.POSITIVE_INFINITY);
+		}
+		
+		adds public void listen(Event e) {
+			if (e instanceof ScannedRobotEvent) {
+				bot.setTurnRadarLeftRadians(Double.POSITIVE_INFINITY);
+			}
+		}
+	
+	}
+
+}
